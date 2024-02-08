@@ -21,10 +21,9 @@ export default function About() {
           <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
             <h1 className="text-4xl font-bold">Victor Espejo</h1>
             <p className="text-xl mt-4 leading-8 lg:w-1/2">
-              I am Victor Espejo, a seasoned front-end developer with over 5
-              years of experience, specializing in the banking sector.
-              Proficient in various frameworks, I am passionate about technology
-              and have a keen interest in cinema and video games.
+              I'm Victor Espejo, an experienced front-end developer with over 5
+              years in the banking sector. Skilled in multiple frameworks, my
+              passions extend to technology, cinema, and video games.
             </p>
           </div>
         </div>
