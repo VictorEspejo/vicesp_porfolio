@@ -8,11 +8,11 @@ export default function WorkCard({ title, description, image, tech, startDate, e
                 <img
                     src={image}
                     alt={title}
-                    className="h-32 object-cover rounded-full"
+                    className="h-32 object-cover rounded-full w-32 h-32 object-fill"
                 />
                 <div className="flex flex-col gap-4">
                     <h2 className="font-bold text-2xl flex justify-between items-center">{title} <span className="font-light text-sm italic">{startDate}<span className="text-sky-600">--</span>{endDate}</span></h2>
-                    <p className="text-lg text-slate-500 dark:text-slate-400">{description}</p>
+                    <p className="text-lg text-slate-500 dark:text-slate-400 w-60">{description}</p>
                 </div>
             </header>
             <section className="grid grid-cols-3 gap-8 ml-0 md:ml-32 mt-8 md:mt-0">

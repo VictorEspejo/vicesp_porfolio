@@ -1,12 +1,14 @@
 import WorkCard from "../../components/WorkCard";
+import Sngularlogo from "@assets/images/sngular.jpg";
+import Amarislogo from "@assets/images/amaris.jpeg";
 
 const works = [
   {
     title: "Sngular",
-    description: "I worked at Amaris as a Front End Developer for 2 years",
+    description: "Sngular People: Cypress e2e testing in banking, GitHub Actions pipelines, React supplier app for Inditex, design system, React Testing, Scrum integration.",
     startDate: "2018-01-01",
     endDate: "2020-01-01",
-    image: "https://via.placeholder.com/150",
+    image: Sngularlogo,
     tech: [
       "html",
       "css",
@@ -24,10 +26,10 @@ const works = [
   },
   {
     title: "Amaris",
-    description: "I worked at Amaris as a Front End Developer for 2 years",
+    description: "Amaris Experience: LitElement banking website, web components methodologies, unit and e2e testing, responsive design, continuous integration and development.",
     startDate: "2018-01-01",
     endDate: "2020-01-01",
-    image: "https://via.placeholder.com/150",
+    image: Amarislogo,
     tech: ["html", "css", "js", "polymer", "webpack", "jira", "gitlab"],
   },
 ];
