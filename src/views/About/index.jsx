@@ -10,12 +10,12 @@ export default function About() {
         <h1 className="w-full text-6xl font-bold text-center py-16">
           About Me
         </h1>
-        <div className="flex flex-col gap-16 lg:flex-row wrap justify-center items-center ">
+        <div className="flex flex-col gap-16 lg:flex-row wrap justify-center items-center py-16">
           <div className="flex justify-center w-full">
             <img
               src={VictorImage}
               alt="Victor Dev"
-              className="w-96 h-96 object-cover rounded-full"
+              className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full"
             />
           </div>
           <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
