@@ -20,15 +20,11 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
             <h1 className="text-4xl font-bold">Victor Espejo</h1>
-            <p className="text-xl mt-4 leading-8 w-1/2">
-              Experienced frontend developer with 5+ years in Git, GitHub
-              Actions, MongoDB, NodeJS, JavaScript, CSS, React, Vue, LitElement,
-              PWA, testing, and design methodologies. <br/>Proactive, team-oriented,
-              and skilled in projects like Cypress testing in banking, Github
-              Actions pipelines, and vendor management app for Inditex using
-              React. Committed to delivering top-notch projects, backed by
-              Superior Professional Training in Web Application Development
-              (2018).
+            <p className="text-xl mt-4 leading-8 lg:w-1/2">
+              I am Victor Espejo, a seasoned front-end developer with over 5
+              years of experience, specializing in the banking sector.
+              Proficient in various frameworks, I am passionate about technology
+              and have a keen interest in cinema and video games.
             </p>
           </div>
         </div>
