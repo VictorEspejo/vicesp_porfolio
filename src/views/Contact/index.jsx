@@ -54,7 +54,7 @@ export default function Contact() {
           </a>
         </li>
         <li>
-          <a href={`mailto:correo@ejemplo.com${VICTOR_EMAIL}`}>
+          <a href={`mailto:${VICTOR_EMAIL}`}>
             <RxPencil2 className="text-sky-600 w-8 h-8 transition duration-150 ease-in-out hover:scale-150" />
           </a>
         </li>
