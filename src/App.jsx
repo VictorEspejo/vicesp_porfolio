@@ -9,7 +9,7 @@ import configDarkMode from "@utils/darkMode";
 function App() {
   configDarkMode();
   return (
-    <main className="w-100 h-dvh flex flex-col overflow-y overflow-x-hidden scroll-smooth bg-gray-100 dark:bg-slate-800">
+    <main className="w-100 h-dvh flex flex-col overflow-y bg-gray-100 dark:bg-slate-800">
       <section className="w-full">
         <section id="welcome" className="w-full">
           <Welcome />
