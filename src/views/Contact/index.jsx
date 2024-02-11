@@ -12,8 +12,7 @@ export default function Contact() {
   return (
     <article
       id="contact-view"
-      className="flex flex-col items-center justify-center gap-4 py-32 pb-40 bg-gray-100 text-sky-600 dark:text-white dark:bg-slate-800"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      className="flex flex-col items-center justify-center gap-4 py-32 pb-40 bg-gray-100 text-sky-600 dark:text-white dark:bg-slate-800 bg-cover bg-center bg-no-repeat"
     >
       <h1 className="font-bold text-black dark:text-white text-6xl">
         Contact <span className="text-sky-600">me</span>

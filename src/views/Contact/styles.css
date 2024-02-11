@@ -1,5 +1,3 @@
 #contact-view {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("@assets/images/contact_bg.svg");
 }

@@ -16,6 +16,7 @@ import Jenkinslogo from "@assets/images/jenkins.png"
 import Bitbucketlogo from "@assets/images/bitbucket.png"
 import Vitelogo from "@assets/images/vite.png"
 import Reduxlogo from "@assets/images/redux.png"
+import Githublogo from "@assets/images/github.png"
 
 
 const logos = {
@@ -37,6 +38,7 @@ const logos = {
     bitbucket: Bitbucketlogo,
     vite: Vitelogo,
     redux: Reduxlogo,
+    github: Githublogo
 }
 
 export default logos;

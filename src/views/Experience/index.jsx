@@ -25,6 +25,7 @@ const works = [
       "mongodb",
       "typescript",
       "tailwind",
+      "github"
     ],
   },
   {

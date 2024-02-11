@@ -8,7 +8,7 @@ export default function Welcome() {
       <header className="w-full px-16 py-4">
         <img src={VictorLogo} alt="Victor Espejo" className="w-16 h-16 transition duration-150 ease-in-out hover:skew-y-12 cursor-pointer" />
       </header>
-      <section className="w-full flex flex-col items-center text-center lg:text-left py-32 lg:py-56">
+      <section className="w-full flex flex-col items-center text-center lg:text-left py-16 lg:py-56">
         <h1 className="text-7xl font-bold">
           Hi! Im <span className="text-sky-600">Víctor</span>
         </h1>
