@@ -6,7 +6,7 @@ export default function Welcome() {
   return (
     <section className="w-full text-black dark:text-white">
       <header className="w-full px-16 py-4">
-        <img src={VictorLogo} alt="Victor Espejo" className="w-16 h-16" />
+        <img src={VictorLogo} alt="Victor Espejo" className="w-16 h-16 transition duration-150 ease-in-out hover:skew-y-12 cursor-pointer" />
       </header>
       <section className="w-full flex flex-col items-center text-center lg:text-left py-32 lg:py-56">
         <h1 className="text-7xl font-bold">
