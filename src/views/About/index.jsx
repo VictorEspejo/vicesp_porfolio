@@ -19,7 +19,14 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
-            <h1 className="text-4xl font-bold w-full text-align-start">Victor Espejo</h1>
+            <header className="flex flex-col md:flex-row gap-3 w-full">
+              <h1 className="text-4xl font-bold text-center">
+                Victor Espejo
+              </h1>
+              <span className="rounded-full px-3 py-1 text-sm bg-sky-300 text-gray-900 tracking-wide font-sans flex justify-center items-center select-none hover:bg-teal-300">
+                Open to work
+              </span>
+            </header>
             <p className="text-xl mt-4 leading-8 lg:pr-32 text-align-start">
               I'm Victor Espejo, an experienced front-end developer with over 5
               years in the banking sector. Skilled in multiple frameworks, my
