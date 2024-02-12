@@ -23,7 +23,7 @@ export default function About() {
               <h1 className="text-4xl font-bold text-center">
                 Victor Espejo
               </h1>
-              <span className="rounded-full px-3 py-1 text-sm bg-sky-300 text-gray-900 tracking-wide font-sans flex justify-center items-center select-none hover:bg-teal-300">
+              <span className="rounded-full animate-pulse px-3 py-1 text-sm bg-sky-300 text-gray-900 tracking-wide font-sans flex justify-center items-center select-none hover:bg-teal-300">
                 Open to work
               </span>
             </header>
