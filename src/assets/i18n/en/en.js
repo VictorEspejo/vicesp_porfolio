@@ -14,6 +14,9 @@ export default {
   works: {
     titleWhere: "Where I've",
     titleWorked: "worked",
+    show: "Show",
+    hide: "Hide",
+    description: "description",
     sngular:
       "Sngular People: Cypress e2e testing in banking, GitHub Actions pipelines, React supplier app for Inditex, design system, React Testing, Scrum integration.",
     amaris:

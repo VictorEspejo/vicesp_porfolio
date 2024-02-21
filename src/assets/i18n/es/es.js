@@ -12,6 +12,9 @@ export default {
   works: {
     titleWhere: "Donde he",
     titleWorked: "trabajado",
+    show: "Mostrar",
+    hide: "Ocultar",
+    description: "descripción",
     sngular:
       "En Sngular: Pruebas Cypress e2e en banca, implementación de pipelines en GitHub Actions, aplicación React para proveedores de Inditex, diseño de sistema, pruebas con React, integración con Scrum.",
     amaris:
