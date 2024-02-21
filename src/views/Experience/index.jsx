@@ -22,7 +22,7 @@ export default function Experience() {
 
   return (
     <main className="w-full py-24 text-black dark:text-white bg-gray-100 dark:bg-slate-800">
-      <section className="flex flex-col items-center overflow-x-hidden relative">
+      <section className="flex flex-col items-center overflow-hidden relative">
         <h1 className="font-bold text-6xl text-center">
           {t("works.titleWhere")}{" "}
           <span className="text-sky-600">{t("works.titleWorked")}</span>
