@@ -32,8 +32,8 @@ export default function WorkCard({
         </div>
       </header>
       <section className="grid grid-cols-4 gap-8 ml-0 lg:ml-32 mt-8 md:mt-0">
-        {tech.map((tech, index) => (
-          <div class="group flex relative">
+        {(tech || []).map((tech, index) => (
+          <div key={index} className="group flex relative">
             <img
               className="w-12 h-12 transition duration-150 ease-in-out hover:scale-150 w-18 h-18"
               src={getTechLogos[tech]}
@@ -41,7 +41,7 @@ export default function WorkCard({
               key={index}
             />
             <span
-              class="group-hover:opacity-80 transition-opacity bg-sky-600 px-2 text-sm text-gray-100 rounded-md absolute left-1/2 top-1/2
+              className="group-hover:opacity-80 transition-opacity bg-sky-600 px-2 text-sm text-gray-100 rounded-md absolute left-1/2 top-1/2
     -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto uppercase font-bold w-max"
             >
               {tech}

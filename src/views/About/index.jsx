@@ -1,6 +1,7 @@
 import WaveBottom from "../../components/WaveBottom";
 import WaveTop from "../../components/WaveTop";
 import VictorImage from "../../assets/images/victor.png";
+import { t } from "i18next";
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
       <WaveTop />
       <article className="w-full bg-sky-600 text-white">
         <h1 className="w-full text-6xl font-bold text-center py-16">
-          About Me
+          {t("about.title")}
         </h1>
         <div className="grid md:grid-cols-2 gap-6 md:gap-0 lg:px-32">
           <div className="flex justify-center w-full grid-span-2 md:grid-span-1">
@@ -20,17 +21,15 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
             <header className="flex flex-col md:flex-row gap-3 w-full">
-              <h1 className="text-4xl font-bold text-center">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
                 Victor Espejo
-              </h1>
-              <span className="rounded-full animate-pulse px-3 py-1 text-sm bg-sky-300 text-gray-900 tracking-wide font-sans flex justify-center items-center select-none hover:bg-teal-300">
-                Open to work
+              </h2>
+              <span className="rounded-full animate-pulse px-1 lg:px-3 py-1 text-sm bg-sky-300 text-gray-900 tracking-wide font-sans flex justify-center items-center select-none hover:bg-teal-300">
+                {t("about.openToWork")}
               </span>
             </header>
             <p className="text-xl mt-4 leading-8 lg:pr-32 text-align-start">
-              I'm Victor Espejo, an experienced front-end developer with over 5
-              years in the banking sector. Skilled in multiple frameworks, my
-              passions extend to technology, cinema, and video games.
+              {t("about.description")}
             </p>
           </div>
         </div>

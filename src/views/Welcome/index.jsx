@@ -1,27 +1,30 @@
 import React from "react";
 import CV from "@assets/documents/Victor_Espejo_CV.pdf";
-import VictorLogo from "../../../public/victorlogo.png"
+import VictorLogo from "../../../public/victorlogo.png";
+import { t } from "i18next";
 
 export default function Welcome() {
   return (
-    <section className="w-full text-black dark:text-white">
-      <header className="w-full px-16 py-4">
-        <img src={VictorLogo} alt="Victor Espejo" className="w-16 h-16 cursor-pointer" />
+    <section className="w-full text-black dark:text-white bg-gray-100 dark:bg-slate-800">
+      <header className="w-full px-16 py-4 flex justify-between items-center">
+        <img
+          src={VictorLogo}
+          alt="Victor Espejo"
+          className="w-16 h-16 cursor-pointer"
+        />
       </header>
       <section className="w-full flex flex-col items-center text-center lg:text-left py-16 lg:py-56">
         <h1 className="text-7xl font-bold">
-          Hi! Im <span className="text-sky-600">Víctor</span>
+          {t("welcome.hi")} <span className="text-sky-600">Víctor</span>
         </h1>
-        <h1 className="text-6xl font-bold mt-3">
-          Front End Developer
-        </h1>
+        <h1 className="text-6xl font-bold mt-3">{t("welcome.frontend")}</h1>
         <a
           href={CV}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:animate-pulse rounded-full px-4 py-3 text-white bg-sky-600 mt-8 active:bg-sky-800 hover:bg-sky-700 transition duration-150 ease-in-out"
         >
-          Download my CV
+          {t("welcome.download")}
         </a>
       </section>
     </section>
