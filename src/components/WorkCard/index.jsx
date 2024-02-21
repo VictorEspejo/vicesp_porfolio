@@ -17,18 +17,23 @@ export default function WorkCard({
     hidden: {
       y: -100,
       opacity: 0,
+      height: 0,
+      transition: {
+        duration: 0.2,
+      },
       transitionEnd: {
         display: "none",
       },
     },
     visible: {
-      display: "block",
+      width: "100%",
+      height: "100%",
       y: 0,
-      position: "absolute",
       top: 0,
       left: 0,
       right: 0,
       bottom: 0,
+      display: "block",
       opacity: 1,
     },
   };
@@ -65,9 +70,6 @@ export default function WorkCard({
                   {isDescVisible ? t("works.hide") : t("works.show")}{" "}
                   <span>{t("works.description")}</span>
                 </span>
-                <svg width="15" height="15" viewBox="0 0 20 20">
-                  <path d="M0 7 L 20 7 L 10 16" />
-                </svg>
               </motion.button>
               <p className="hidden text-lg text-slate-500 dark:text-slate-400 w-60">
                 {description}
@@ -102,11 +104,9 @@ export default function WorkCard({
                 type: "spring",
                 stiffness: 150,
               }}
-              style={{
-                position: "absolute",
-              }}
+              className="w-full h-0 absolute"
             >
-              <p className="w-full h-full bg-gray-300 text-dark dark:bg-slate-600 dark:text-white text-lg text-slate-500">
+              <p className="w-full py-2 h-full bg-gray-300 text-dark dark:bg-slate-600 dark:text-white text-lg text-slate-500">
                 {description}
               </p>
             </motion.article>
