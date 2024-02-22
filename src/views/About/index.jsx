@@ -1,32 +1,34 @@
 import WaveBottom from "../../components/WaveBottom";
 import WaveTop from "../../components/WaveTop";
 import VictorImage from "../../assets/images/victor.png";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { t } from "i18next";
-import { useEffect, useRef } from "react";
 
 export default function About() {
-  const openWorkRef = useRef(null);
-  const isInView = useInView(openWorkRef, { once: true });
-  const control = useAnimation();
-
   const variants = {
     visible: { x: 0, opacity: 1 },
-    hidden: { x: 300, opacity: 0 },
+    hidden: { x: 200, opacity: 0 },
   };
-
-  useEffect(() => {
-    if (isInView) {
-      control.start("visible");
-    }
-  }, [control, isInView]);
 
   return (
     <section className="w-full bg-gray-100 dark:bg-slate-800">
       <WaveTop />
       <article className="w-full bg-sky-600 text-white">
         <h1 className="w-full text-6xl font-bold text-center py-16">
-          {t("about.title")}
+          {(t("about.title") || "").split(" ").map((el, i) => (
+            <motion.span
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: i / 2,
+              }}
+              key={i}
+            >
+              {el}{" "}
+            </motion.span>
+          ))}
         </h1>
         <div className="grid md:grid-cols-2 gap-6 md:gap-0 lg:px-32">
           <div className="flex justify-center w-full grid-span-2 md:grid-span-1">
@@ -42,11 +44,16 @@ export default function About() {
                 Victor Espejo
               </h2>
               <motion.span
-                ref={openWorkRef}
-                animate={control}
                 variants={variants}
                 initial="hidden"
-                transition={{ duration: 1, type: "tween" }}
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                  duration: 1,
+                  type: "tween",
+                  stiffness: 120,
+                  delay: 1,
+                }}
                 className="rounded-full animate-pulse px-1 lg:px-3 py-1 text-sm bg-sky-300 text-gray-900 font-sans flex justify-center items-center select-none hover:bg-teal-300"
               >
                 {t("about.openToWork")}

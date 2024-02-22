@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import getTechLogos from "@utils/techLogos.js";
 import { motion, useAnimation, LazyMotion, domAnimation } from "framer-motion";
 import { t } from "i18next";
-import { white } from "tailwindcss/colors";
 
 export default function WorkCard({
   title,
