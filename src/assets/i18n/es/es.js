@@ -1,6 +1,6 @@
 export default {
   welcome: {
-    hi: "¡Hola! Soy",
+    title: "¡Hola! Soy <1>{{name}}</1>",
     frontend: "Desarrollador Front-end",
     download: "Descarga mi CV",
   },

@@ -1,6 +1,7 @@
 import React from "react";
 import CV from "@assets/documents/Victor_Espejo_CV.pdf";
 import VictorLogo from "../../../public/victorlogo.png";
+import { Trans } from "react-i18next";
 import { t } from "i18next";
 import { motion } from "framer-motion";
 import { buttonScale } from "@constants/motionVariants";
@@ -16,10 +17,15 @@ export default function Welcome() {
         />
       </header>
       <section className="w-full flex flex-col items-center text-center lg:text-left py-16 lg:py-56">
-        <h1 className="text-7xl font-bold">
-          {t("welcome.hi")} <span className="text-sky-600">Víctor</span>
+        <h1 className="text-6xl lg:text-7xl font-bold">
+          <Trans i18nKey="welcome.title" values={{ name: "Víctor" }}>
+            Hi<span className="text-sky-600">name</span>
+          </Trans>
+          <br />
+          <span className="text-5xl lg:text-6xl font-bold">
+            {t("welcome.frontend")}
+          </span>
         </h1>
-        <h1 className="text-6xl font-bold mt-3">{t("welcome.frontend")}</h1>
         <motion.a
           variants={buttonScale}
           initial={{ scale: 1 }}
