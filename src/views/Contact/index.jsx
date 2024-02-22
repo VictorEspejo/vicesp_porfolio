@@ -2,12 +2,32 @@ import React from "react";
 import { RxLinkedinLogo, RxGithubLogo, RxPencil2 } from "react-icons/rx";
 import SocialLink from "@components/SocialLink";
 import { t } from "i18next";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 import "./styles.css";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const VICTOR_EMAIL = "vicespejo96@gmail.com";
 
 export default function Contact() {
+  const linksRef = useRef(null);
+  const controls = useAnimation();
+  const inView = useInView(linksRef, { once: true });
+  const variants = {
+    init: {
+      scale: 0.25,
+      opacity: 0.1,
+    },
+    expand: {
+      scale: 1,
+      opacity: 1,
+    },
+  };
+
+  useEffect(() => {
+    controls.start(inView ? "expand" : "init");
+  }, [controls, inView]);
   return (
     <article
       id="contact-view"
@@ -17,7 +37,19 @@ export default function Contact() {
         {t("contact.title")}{" "}
         <span className="text-sky-600">{t("contact.me")}</span>
       </h1>
-      <ul className="grid md:grid-cols-3 gap-6 mt-12">
+      <motion.ul
+        ref={linksRef}
+        initial={"init"}
+        animate={controls}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 150,
+          opacity: { ease: "easeInOut" },
+        }}
+        variants={variants}
+        className="grid md:grid-cols-3 gap-6 mt-12"
+      >
         <li>
           <SocialLink
             href="https://www.linkedin.com/in/victor-espejo/"
@@ -39,7 +71,7 @@ export default function Contact() {
             <p className="text-lg font-bold ">Email</p>
           </SocialLink>
         </li>
-      </ul>
+      </motion.ul>
     </article>
   );
 }

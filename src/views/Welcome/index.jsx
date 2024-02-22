@@ -2,6 +2,8 @@ import React from "react";
 import CV from "@assets/documents/Victor_Espejo_CV.pdf";
 import VictorLogo from "../../../public/victorlogo.png";
 import { t } from "i18next";
+import { motion } from "framer-motion";
+import { buttonScale } from "@constants/motionVariants";
 
 export default function Welcome() {
   return (
@@ -18,14 +20,17 @@ export default function Welcome() {
           {t("welcome.hi")} <span className="text-sky-600">Víctor</span>
         </h1>
         <h1 className="text-6xl font-bold mt-3">{t("welcome.frontend")}</h1>
-        <a
+        <motion.a
+          variants={buttonScale}
+          initial={{ scale: 1 }}
+          whileHover={"onHover"}
           href={CV}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:animate-pulse rounded-full px-4 py-3 text-white bg-sky-600 mt-8 active:bg-sky-800 hover:bg-sky-700 transition duration-150 ease-in-out"
+          className="hover:animate-pulse drop-shadow-lg rounded-full px-4 py-3 text-white bg-sky-600 mt-8 active:bg-sky-800 hover:bg-sky-700"
         >
           {t("welcome.download")}
-        </a>
+        </motion.a>
       </section>
     </section>
   );
