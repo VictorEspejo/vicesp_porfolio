@@ -50,7 +50,7 @@ export default function WorkCard({
       <section className="px-2 py-2 bg-gray-200 dark:bg-slate-700 rounded-xl">
         <article className="overflow-hidden workcard bg-gray-300 text-dark dark:bg-slate-600 dark:text-white rounded-lg shadow-lg flex flex-col gap-6 lg:flex-row justify-center py-8 px-8">
           <header className="flex flex-col lg:flex-row items-center gap-8 flex-wrap">
-            <div className="bg-blue-500 rounded-full px-1 py-1 drop-shadow-lg">
+            <div className="bg-sky-600 rounded-full px-1 py-1 drop-shadow-lg">
               <img
                 src={image}
                 alt={title}
@@ -68,7 +68,7 @@ export default function WorkCard({
               <motion.button
                 whileTap={{ scale: 0.97 }}
                 onClick={toggleDescription}
-                className="drop-shadow-lg px-2 py-1 rounded-full bg-blue-400 text-black flex flex-row gap-4 justify-center itelms-center"
+                className="drop-shadow-lg px-2 py-1 rounded-full bg-sky-400 hover:bg-sky-600 text-black flex flex-row gap-4 justify-center itelms-center"
               >
                 <span>
                   {isDescVisible ? t("works.hide") : t("works.show")}{" "}

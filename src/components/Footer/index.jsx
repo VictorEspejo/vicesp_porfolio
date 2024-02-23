@@ -16,14 +16,16 @@ export default function Footer() {
 
   async function sequence() {
     await animation.start({
-      y: "-90vh",
+      y: "-80vh",
       scale: 0.25,
+      opacity: 0,
     });
     await animation.start({
       y: "0vh",
+      opacity: 0.25,
       transition: { duration: 0.5 },
     });
-    animation.start({ scale: 1 });
+    animation.start({ scale: 1, opacity: 0.5 });
   }
 
   const handleDarkMode = () => {
@@ -63,17 +65,10 @@ export default function Footer() {
           </Link>
         </li>
         <li className="rounded-full w-12 h-12 bg-gray-800 flex justify-center items-center px-2 py-2 text-white transition duration-150 ease-in-out hover:scale-125 cursor-pointer">
-          {darkMode ? (
-            <RxHalf2
-              onClick={handleDarkMode}
-              className="w-8 h-8 transition duration-150 ease-in-out hover:scale-150"
-            />
-          ) : (
-            <RxHalf1
-              onClick={handleDarkMode}
-              className="w-6 h-6 transition duration-200 ease-in-out hover:scale-150"
-            />
-          )}
+          <RxHalf1
+            onClick={handleDarkMode}
+            className="w-6 h-6 transition duration-200 ease-in-out hover:scale-150"
+          />
         </li>
       </ul>
     </motion.nav>
