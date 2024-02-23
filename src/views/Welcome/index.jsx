@@ -9,7 +9,7 @@ import { buttonScale } from "@constants/motionVariants";
 
 export default function Welcome() {
   return (
-    <section className="w-full text-black dark:text-white bg-gray-100 dark:bg-slate-800">
+    <section className="w-full text-black dark:text-white bg-gray-100 dark:bg-slate-800 py-20">
       <header className="w-full px-16 py-4 flex justify-between items-center">
         <img
           src={VictorLogo}
