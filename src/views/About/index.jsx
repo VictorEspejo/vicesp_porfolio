@@ -7,7 +7,7 @@ import { t } from "i18next";
 export default function About() {
   const variants = {
     visible: { x: 0, opacity: 1 },
-    hidden: { x: 200, opacity: 0 },
+    hidden: { x: 150, opacity: 0 },
   };
 
   return (
@@ -40,7 +40,7 @@ export default function About() {
           </div>
           <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
             <header className="flex flex-col md:flex-row gap-3 w-full relative overflow-hidden">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-center">
                 Victor Espejo
               </h2>
               <motion.span

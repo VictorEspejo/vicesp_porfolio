@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-import colors from "tailwindcss/colors"
+import colors from "tailwindcss/colors";
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx}",
-  ],
-  darkMode: 'class',
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  darkMode: "class",
   theme: {
     extend: {},
     colors: {
@@ -22,7 +19,7 @@ export default {
       vic_yellow: {
         DEFAULT: "#F2E205",
       },
-    }
+    },
   },
   plugins: [],
-}
+};
