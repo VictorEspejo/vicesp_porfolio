@@ -4,6 +4,20 @@
     blink 0.75s step-end infinite;
 }
 
+#welcome_bg {
+  background-image: url("../../assets/images/blob.svg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+}
+
+@media (max-width: 768px) {
+  #welcome_bg {
+    background-size: 60%;
+    background-position: center left;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0%;
