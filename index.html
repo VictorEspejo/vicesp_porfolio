@@ -30,7 +30,7 @@
 <body>
   <div id="root"></div>
   <script>
-    window.addEventListener("load", () => { 
+    window.addEventListener("DOMContentLoaded", () => { 
       if(navigator.serviceWorker){
         navigator.serviceWorker.register("./sw.js");
       }

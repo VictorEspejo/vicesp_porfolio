@@ -25,7 +25,7 @@ export default function Footer() {
     >
       <ul className="bg-black text-white py-4 px-24 rounded-full flex justify-center items-center gap-6">
         <li className="rounded-full w-12 h-12 bg-gray-800 flex justify-center items-center px-2 py-2 transition duration-150 ease-in-out hover:scale-125 cursor-pointer select-none shadow-lg">
-          <Link to="welcome" smooth={true}>
+          <Link to="welcome" smooth={true} href="#welcome">
             <span aria-hidden="true">
               <RxHome className="w-6 h-6 transition duration-200 ease-in-out hover:scale-150" />
               <span className="sr-only">Welcome</span>
@@ -33,7 +33,7 @@ export default function Footer() {
           </Link>
         </li>
         <li className="rounded-full w-12 h-12 bg-gray-800 flex justify-center items-center px-2 py-2 transition duration-150 ease-in-out hover:scale-125 cursor-pointer select-none shadow-lg">
-          <Link to="about" smooth={true}>
+          <Link to="about" smooth={true} href="#about">
             <span aria-hidden="true">
               <RxPerson className="w-6 h-6 transition duration-200 ease-in-out hover:scale-150" />
               <span className="sr-only">About me</span>
@@ -41,7 +41,7 @@ export default function Footer() {
           </Link>
         </li>
         <li className="rounded-full w-12 h-12 bg-gray-800 flex justify-center items-center px-2 py-2 transition duration-150 ease-in-out hover:scale-125 cursor-pointer select-none shadow-lg">
-          <Link to="experience" smooth={true}>
+          <Link to="experience" smooth={true} href="#experience">
             <span aria-hidden="true">
               <RxFileText className="w-6 h-6 transition duration-200 ease-in-out hover:scale-150" />
               <span className="sr-only">Experience</span>
@@ -49,7 +49,7 @@ export default function Footer() {
           </Link>
         </li>
         <li className="rounded-full w-12 h-12 bg-gray-800 flex justify-center items-center px-2 py-2 transition duration-150 ease-in-out hover:scale-125 cursor-pointer select-none shadow-lg">
-          <Link to="contact" smooth={true}>
+          <Link to="contact" smooth={true} href="#contact">
             <span aria-hidden="true">
               <RxEnvelopeClosed className="w-6 h-6 transition duration-200 ease-in-out hover:scale-150" />
               <span className="sr-only">Contact</span>
