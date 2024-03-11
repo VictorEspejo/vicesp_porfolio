@@ -21,7 +21,7 @@ export default function Footer() {
       initial={{ scale: 0.1 }}
       animate={{ scale: 1 }}
       transition={{ duration: 2.5, type: "spring", stiffness: 150 }}
-      className="w-full flex justify-center opacity-50 mx-auto"
+      className="w-full flex justify-center opacity-70 mx-auto"
     >
       <ul className="bg-black text-white py-4 px-24 rounded-full flex justify-center items-center gap-6">
         <li className="rounded-full w-12 h-12 bg-gray-800 flex justify-center items-center px-2 py-2 text-white transition duration-150 ease-in-out hover:scale-125 cursor-pointer select-none">
