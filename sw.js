@@ -4,7 +4,17 @@ const API_URL = "https://victor-espejo.vercel.app/";
 
 const sw = self;
 
-const APP_SHELL = ["/", "/index.html", "/victorlogo.png", "/vite.svg"];
+const APP_SHELL = [
+  "/",
+  "/index.html",
+  "/victorlogo.png",
+  "/vite.svg",
+  "/manifest.json",
+  "/victorlogo_144.png",
+  "/victorlogo_192.png",
+  "/victorlogo_384.png",
+  "/victorlogo_512.png",
+];
 
 function cacheFirstAndNetworkFallback(request, cacheName) {
   return caches.match(request).then((response) => {
@@ -33,7 +43,6 @@ sw.addEventListener("install", (e) => {
 sw.addEventListener("fetch", (e) => {
   let response = fetch(e.request);
   if (e.request.url.includes(API_URL) && e.request.url.includes("assets")) {
-    console.log(e.request.url);
     response = cacheFirstAndNetworkFallback(e.request, DYNAMIC_CACHE);
   }
 
