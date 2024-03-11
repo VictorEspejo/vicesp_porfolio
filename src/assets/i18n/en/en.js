@@ -18,9 +18,9 @@ export default {
     hide: "Hide",
     description: "description",
     sngular:
-      "Sngular People: Cypress e2e testing in banking, GitHub Actions pipelines, React supplier app for Inditex, design system, React Testing, Scrum integration.",
+      "Expert in web components methodologies, unit and e2e testing, responsive design. Proficient in continuous integration and development. Additional skills: React, TypeScript, NodeJS, MongoDB, Vue, PWA.",
     amaris:
-      "Amaris Experience: LitElement banking website, web components methodologies, unit and e2e testing, responsive design, continuous integration and development.",
+      "Senior JS Developer with expertise in LitElement, web components methodologies, and extensive experience in banking website development. Proficient in webpack, continuous integration, Git, and other essential technologies. Specialized in unit and e2e testing, responsive design, ensuring constant development and innovation.",
   },
   contact: {
     title: "Contact",

@@ -5,8 +5,8 @@ import Amarislogo from "@assets/images/amaris.jpeg";
 export const works = [
   {
     title: "Sngular",
-    startDate: "2018-01-01",
-    endDate: "2020-01-01",
+    startDate: "abr 2021",
+    endDate: "nov 2023",
     image: Sngularlogo,
     tech: [
       "html",
@@ -30,8 +30,8 @@ export const works = [
   {
     title: "Amaris",
     description: t("works.amaris"),
-    startDate: "2018-01-01",
-    endDate: "2020-01-01",
+    startDate: "oct 2018",
+    endDate: "abr 2021",
     image: Amarislogo,
     tech: [
       "html",

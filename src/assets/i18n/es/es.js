@@ -16,9 +16,9 @@ export default {
     hide: "Ocultar",
     description: "descripción",
     sngular:
-      "En Sngular: Pruebas Cypress e2e en banca, implementación de pipelines en GitHub Actions, aplicación React para proveedores de Inditex, diseño de sistema, pruebas con React, integración con Scrum.",
+      "Experto en metodologías de web components, pruebas unitarias y e2e, diseño responsive. Experiencia en integración y desarrollo continuo. Conocimientos: React, TypeScript, NodeJS, MongoDB, Vue, PWA.",
     amaris:
-      "Experiencia en Amaris: Desarrollo del sitio web bancario utilizando LitElement, metodologías de componentes web, pruebas unitarias y e2e, diseño responsivo, integración continua y desarrollo constante.",
+      "Experiencia en LitElement, metodologías de componentes web y amplia trayectoria en el desarrollo de sitios web bancarios. Experto en webpack, integración continua, Git y otras tecnologías esenciales. Especializado en pruebas unitarias y e2e, diseño responsivo.",
   },
   contact: {
     title: "Contácta",

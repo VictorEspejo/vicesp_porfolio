@@ -54,21 +54,19 @@ export default function WorkCard({
               <img
                 src={image}
                 alt={title}
-                className="h-32 object-cover rounded-full w-32 h-32 object-fill"
+                className="rounded-full aspect-square w-32 h-32 object-fill"
               />
             </div>
-            <div className="flex flex-col gap-4">
-              <h2 className="font-bold text-2xl flex gap-4 justify-between items-center">
-                {title}
-                <div className="bg-gray-100 rounded-full px-2 py-1 flex flex-row gap-2 font-light text-sm italic text-black">
-                  <span>{startDate}</span>
-                  <span>{endDate}</span>
-                </div>
-              </h2>
+            <div className="grid grid-rows-3 gap-4">
+              <h2 className="font-bold text-3xl text-center">{title}</h2>
+              <div className="bg-gray-100 rounded-full px-2 py-1 flex flex-row justify-center items-center gap-2 font-light text-sm italic text-black">
+                <span>{startDate}</span>
+                <span>{endDate}</span>
+              </div>
               <motion.button
                 whileTap={{ scale: 0.97 }}
                 onClick={toggleDescription}
-                className="drop-shadow-lg px-2 py-1 rounded-full bg-sky-600 hover:bg-sky-400 text-white hover:text-black flex flex-row gap-4 justify-center itelms-center"
+                className="drop-shadow-lg px-2 py-1 rounded-full bg-sky-600 hover:bg-sky-400 text-white hover:text-black flex flex-row gap-4 justify-center items-center"
               >
                 <span>
                   {isDescVisible ? t("works.hide") : t("works.show")}{" "}
@@ -82,7 +80,7 @@ export default function WorkCard({
               {(tech || []).map((tech, index) => (
                 <div key={index} className="group flex relative">
                   <img
-                    className="w-12 h-12 transition duration-150 ease-in-out hover:scale-150 w-18 h-18"
+                    className="w-12 aspect-square transition duration-150 ease-in-out hover:scale-150"
                     src={getTechLogos[tech]}
                     alt={tech}
                     key={index}
@@ -102,12 +100,12 @@ export default function WorkCard({
               initial="hidden"
               transition={{
                 duration: 0.5,
-                type: "spring",
+                type: "tween",
                 stiffness: 150,
               }}
               className="w-full h-0 absolute"
             >
-              <p className="w-full py-2 h-full bg-gray-300 text-dark dark:bg-slate-600 dark:text-white text-lg text-slate-500">
+              <p className="w-full py-2 h-full bg-gray-300 dark:bg-slate-600 text-sm lg:text-lg text-slate-500 dark:text-white">
                 {description}
               </p>
             </motion.article>
