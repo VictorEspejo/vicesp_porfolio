@@ -6,6 +6,7 @@ export default {
   },
   about: {
     title: "About me",
+    meta: "Victor Espejo's information page.",
     description: `I'm Victor Espejo, an experienced front-end developer with over 5
       years in the banking sector. Skilled in multiple frameworks, my
       passions extend to technology, cinema, and video games.`,
@@ -25,5 +26,7 @@ export default {
   contact: {
     title: "Contact",
     me: "me",
+    description:
+      "Victor Espejo's contact page. Here you can find different ways to contact me.",
   },
 };

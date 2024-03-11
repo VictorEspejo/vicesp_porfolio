@@ -6,6 +6,7 @@ export default {
   },
   about: {
     title: "Acerca de mí",
+    meta: "Página de información de Victor Espejo.",
     description: `Soy Víctor Espejo, un desarrollador front-end con más de 5 años de experiencia en el sector bancario. Experto en diversos frameworks, mis pasiones se extienden a la tecnología, el cine y los videojuegos.`,
     openToWork: "Disponible para trabajar",
   },
@@ -23,5 +24,7 @@ export default {
   contact: {
     title: "Contacta",
     me: "conmigo",
+    description:
+      "Página de contacto de Victor Espejo. Aquí puedes encontrar diferentes formas de contactarme.",
   },
 };

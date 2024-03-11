@@ -3,6 +3,7 @@ import WaveBottomImg from "../../assets/images/wavebottom.svg";
 import VictorImage from "../../assets/images/victor.png";
 import { motion } from "framer-motion";
 import { t } from "i18next";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   const variants = {
@@ -10,12 +11,34 @@ export default function About() {
     hidden: { x: 150, opacity: 0 },
   };
 
+  const aboutTitle = t("about.title") || "";
+  const openToWorkText = t("about.openToWork");
+  const descriptionText = t("about.description");
+  const metaText = t("about.meta");
+
   return (
     <section className="w-full bg-gray-100 dark:bg-slate-800">
-      <img src={WaveTopImg} alt="wave top" className="wave-top" />
+      <img
+        src={WaveTopImg}
+        alt="Wave pattern at the top of the page"
+        className="wave-top"
+        role="presentation"
+        aria-hidden="true"
+      />
       <article className="w-full bg-sky-600 text-white px-10 lg:px-8">
-        <h1 className="w-full text-6xl font-bold text-center py-16">
-          {(t("about.title") || "").split(" ").map((el, i) => (
+        <Helmet>
+          <title>About - Victor Espejo</title>
+          <meta name="description" content={metaText} />
+          <meta
+            name="keywords"
+            content="React, JavaScript, Web Development, Front-end Development, Victor Espejo"
+          />
+        </Helmet>
+        <h1
+          className="w-full text-6xl font-bold text-center py-16"
+          aria-level="1"
+        >
+          {aboutTitle.split(" ").map((el, i) => (
             <motion.span
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -35,7 +58,8 @@ export default function About() {
             <img
               src={VictorImage}
               alt="Victor Dev"
-              className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full bg-white border-4 border-sky-600 dark:border-sky-800 shadow-2xl"
+              loading="lazy"
+              className="w-72 md:w-96 aspect-square object-cover rounded-full bg-white border-4 border-sky-600 dark:border-sky-800 shadow-2xl"
             />
           </div>
           <div className="flex flex-col justify-center items-center text-white">
@@ -56,16 +80,21 @@ export default function About() {
                 }}
                 className="rounded-full animate-pulse px-1 lg:px-3 py-1 text-sm bg-sky-300 text-gray-900 font-sans flex justify-center items-center select-none hover:bg-teal-300"
               >
-                {t("about.openToWork")}
+                {openToWorkText}
               </motion.span>
             </header>
             <p className="text-xl mt-4 leading-8 lg:pr-32 text-align-start">
-              {t("about.description")}
+              {descriptionText}
             </p>
           </div>
         </div>
       </article>
-      <img src={WaveBottomImg} alt="wave bottom" />
+      <img
+        src={WaveBottomImg}
+        alt="Wave pattern at the bottom of the page"
+        role="presentation"
+        aria-hidden="true"
+      />
     </section>
   );
 }

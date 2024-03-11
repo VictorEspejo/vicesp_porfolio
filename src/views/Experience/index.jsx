@@ -1,7 +1,9 @@
+import { Suspense } from "react";
 import WorkCard from "../../components/WorkCard";
 import { works } from "../../constants/works";
 import { motion } from "framer-motion";
 import { t } from "i18next";
+import LoadingSpinner from "@components/LoadingSpinner";
 
 export default function Experience() {
   const variants = {
@@ -12,7 +14,7 @@ export default function Experience() {
   return (
     <main className="w-full py-24 text-black dark:text-white bg-gray-100 dark:bg-slate-800">
       <section className="flex flex-col items-center overflow-hidden relative">
-        <h1 className="font-bold text-6xl text-center">
+        <h1 className="font-bold text-6xl text-center" aria-level="1">
           {t("works.titleWhere")}{" "}
           <span className="text-sky-600">{t("works.titleWorked")}</span>
         </h1>
@@ -23,21 +25,23 @@ export default function Experience() {
               description: t(`works.${work.title.toLowerCase()}`),
             };
             return (
-              <motion.div
-                key={index}
-                variants={variants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{
-                  duration: 1.25,
-                  type: "spring",
-                  stiffness: 150,
-                  delay: 0.5,
-                }}
-              >
-                <WorkCard key={index} {...workWithDescription} />
-              </motion.div>
+              <Suspense fallback={<LoadingSpinner/>} key={index}>
+                <motion.div
+                  key={index}
+                  variants={variants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 1.25,
+                    type: "spring",
+                    stiffness: 150,
+                    delay: 0.5,
+                  }}
+                >
+                  <WorkCard key={index} {...workWithDescription} />
+                </motion.div>
+              </Suspense>
             );
           })}
         </motion.article>

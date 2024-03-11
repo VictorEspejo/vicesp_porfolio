@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 import CV from "@assets/documents/Victor_Espejo_CV.pdf";
 import VictorLogo from "../../../public/victorlogo.png";
@@ -14,12 +13,16 @@ export default function Welcome() {
         <header className="w-1/2 px-16 py-20 grid place-items-center lg:place-items-start grid-cols-1 lg:grid-cols-2">
           <img
             src={VictorLogo}
-            alt="Victor Espejo"
+            alt="Logo Victor Espejo"
             className="w-16 h-16 cursor-pointer col-span-2"
           />
         </header>
         <section className="w-full flex flex-col items-center text-center lg:text-left py-16 lg:py-56">
-          <h1 className="text-6xl lg:text-7xl font-bold text-center">
+          <h1
+            className="text-6xl lg:text-7xl font-bold text-center"
+            role="heading"
+            aria-level="1"
+          >
             <Trans i18nKey="welcome.title" values={{ name: "Víctor" }}>
               Hi<span className="text-sky-600">name</span>
             </Trans>
@@ -35,6 +38,7 @@ export default function Welcome() {
             href={CV}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={t("welcome.download")}
             className="hover:animate-pulse drop-shadow-lg rounded-full px-4 py-3 text-white bg-sky-600 mt-8 active:bg-sky-800 hover:bg-sky-700"
           >
             {t("welcome.download")}
