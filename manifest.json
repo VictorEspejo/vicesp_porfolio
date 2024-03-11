@@ -1,5 +1,5 @@
 {
-    "short_name": "vic-espejo",
+    "short_name": "VicEspejo",
     "name": "Victor Espejo",
     "icons": [{
             "src": "/victorlogo_144.png",
@@ -26,5 +26,5 @@
     "background_color": "#0284c7",
     "theme_color": "#0284c7",
     "display": "standalone",
-    "scope": "http://localhost:8080/"
+    "scope": "/"
 }
