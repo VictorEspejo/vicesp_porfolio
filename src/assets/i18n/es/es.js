@@ -21,7 +21,7 @@ export default {
       "Experiencia en LitElement, metodologías de componentes web y amplia trayectoria en el desarrollo de sitios web bancarios. Experto en webpack, integración continua, Git y otras tecnologías esenciales. Especializado en pruebas unitarias y e2e, diseño responsivo.",
   },
   contact: {
-    title: "Contácta",
+    title: "Contacta",
     me: "conmigo",
   },
 };

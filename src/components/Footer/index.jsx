@@ -1,10 +1,8 @@
 import { RxHome } from "react-icons/rx";
 import { RxPerson } from "react-icons/rx";
 import { RxFileText } from "react-icons/rx";
-import { RxHalf2 } from "react-icons/rx";
 import { RxHalf1 } from "react-icons/rx";
 import { RxEnvelopeClosed } from "react-icons/rx";
-import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { signal } from "@preact/signals-react";
