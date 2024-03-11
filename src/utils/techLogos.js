@@ -12,33 +12,34 @@ import VueLogo from "@assets/images/vue.png";
 import Webpacklogo from "@assets/images/webpack.png";
 import Azurelogo from "@assets/images/azure.png";
 import Nodelogo from "@assets/images/node.png";
-import Jenkinslogo from "@assets/images/jenkins.png"
-import Bitbucketlogo from "@assets/images/bitbucket.png"
-import Vitelogo from "@assets/images/vite.png"
-import Reduxlogo from "@assets/images/redux.png"
-import Githublogo from "@assets/images/github.png"
-
+import Jenkinslogo from "@assets/images/jenkins.png";
+import Bitbucketlogo from "@assets/images/bitbucket.png";
+import Vitelogo from "@assets/images/vite.png";
+import Reduxlogo from "@assets/images/redux.png";
+import Githublogo from "@assets/images/github.png";
+import PWAlogo from "@assets/images/pwa.png";
 
 const logos = {
-    html: HTMLlogo,
-    css: CSSlogo,
-    js: JSlogo,
-    react: Reactlogo,
-    mongodb: MongoDblogo,
-    jira: Jiralogo,
-    gitlab: Gitlablogo,
-    tailwind: Tailwindlogo,
-    polymer: Polymerlogo,
-    typescript: Typescriptlogo,
-    vue: VueLogo,
-    webpack: Webpacklogo,
-    azure: Azurelogo,
-    node: Nodelogo,
-    jenkins: Jenkinslogo,
-    bitbucket: Bitbucketlogo,
-    vite: Vitelogo,
-    redux: Reduxlogo,
-    github: Githublogo
-}
+  html: HTMLlogo,
+  css: CSSlogo,
+  js: JSlogo,
+  react: Reactlogo,
+  mongodb: MongoDblogo,
+  jira: Jiralogo,
+  gitlab: Gitlablogo,
+  tailwind: Tailwindlogo,
+  polymer: Polymerlogo,
+  typescript: Typescriptlogo,
+  vue: VueLogo,
+  webpack: Webpacklogo,
+  azure: Azurelogo,
+  node: Nodelogo,
+  jenkins: Jenkinslogo,
+  bitbucket: Bitbucketlogo,
+  vite: Vitelogo,
+  redux: Reduxlogo,
+  github: Githublogo,
+  pwa: PWAlogo,
+};
 
 export default logos;

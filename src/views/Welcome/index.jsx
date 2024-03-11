@@ -9,12 +9,12 @@ import { buttonScale } from "@constants/motionVariants";
 
 export default function Welcome() {
   return (
-    <section className="w-full text-black dark:text-white bg-gray-100 dark:bg-slate-800 py-20">
-      <header className="w-full px-16 py-4 flex justify-between items-center">
+    <section className="w-full h-screen text-black dark:text-white bg-gray-100 dark:bg-slate-800 flex flex-col items-center">
+      <header className="w-1/2 px-16 py-20 grid place-items-center lg:place-items-start grid-cols-1 lg:grid-cols-2">
         <img
           src={VictorLogo}
           alt="Victor Espejo"
-          className="w-16 h-16 cursor-pointer"
+          className="w-16 h-16 cursor-pointer col-span-2"
         />
       </header>
       <section className="w-full flex flex-col items-center text-center lg:text-left py-16 lg:py-56">

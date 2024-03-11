@@ -12,6 +12,7 @@ export const works = [
       "html",
       "css",
       "js",
+      "pwa",
       "node",
       "react",
       "redux",
