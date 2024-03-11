@@ -68,7 +68,7 @@ export default function WorkCard({
               <motion.button
                 whileTap={{ scale: 0.97 }}
                 onClick={toggleDescription}
-                className="drop-shadow-lg px-2 py-1 rounded-full bg-sky-400 hover:bg-sky-600 text-black flex flex-row gap-4 justify-center itelms-center"
+                className="drop-shadow-lg px-2 py-1 rounded-full bg-sky-600 hover:bg-sky-400 text-white hover:text-black flex flex-row gap-4 justify-center itelms-center"
               >
                 <span>
                   {isDescVisible ? t("works.hide") : t("works.show")}{" "}

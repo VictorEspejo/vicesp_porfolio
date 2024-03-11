@@ -1,5 +1,5 @@
-import WaveBottom from "../../components/WaveBottom";
-import WaveTop from "../../components/WaveTop";
+import WaveTopImg from "../../assets/images/wavetop.svg";
+import WaveBottomImg from "../../assets/images/wavebottom.svg";
 import VictorImage from "../../assets/images/victor.png";
 import { motion } from "framer-motion";
 import { t } from "i18next";
@@ -12,8 +12,8 @@ export default function About() {
 
   return (
     <section className="w-full bg-gray-100 dark:bg-slate-800">
-      <WaveTop />
-      <article className="w-full bg-sky-600 text-white">
+      <img src={WaveTopImg} alt="wave top" className="wave-top" />
+      <article className="w-full bg-sky-600 text-white px-10 lg:px-8">
         <h1 className="w-full text-6xl font-bold text-center py-16">
           {(t("about.title") || "").split(" ").map((el, i) => (
             <motion.span
@@ -38,7 +38,7 @@ export default function About() {
               className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full bg-white border-4 border-sky-600 dark:border-sky-800 shadow-2xl"
             />
           </div>
-          <div className="flex flex-col justify-center items-center text-white px-10 lg:px-8">
+          <div className="flex flex-col justify-center items-center text-white">
             <header className="flex flex-col md:flex-row gap-3 w-full relative overflow-hidden">
               <h2 className="text-3xl lg:text-4xl font-bold text-center">
                 Victor Espejo
@@ -65,7 +65,7 @@ export default function About() {
           </div>
         </div>
       </article>
-      <WaveBottom />
+      <img src={WaveBottomImg} alt="wave bottom" />
     </section>
   );
 }
