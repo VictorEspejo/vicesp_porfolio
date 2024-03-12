@@ -1,46 +1,58 @@
 // vite.config.js
 import { defineConfig } from "vite";
-import { resolve } from "path";
-import { copyFileSync } from "fs";
 import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 
 const images = [
-  "victorlogo_144.png",
-  "victorlogo_192.png",
-  "victorlogo_384.png",
-  "victorlogo_512.png",
+  {
+    src: "/victorlogo_144.png",
+    sizes: "144x144",
+    type: "image/png",
+    purpose: "any",
+  },
+  {
+    src: "/victorlogo_192.png",
+    sizes: "192x192",
+    type: "image/png",
+    purpose: "any",
+  },
+  {
+    src: "/victorlogo_384.png",
+    sizes: "384x384",
+    type: "image/png",
+    purpose: "any",
+  },
+  {
+    src: "/victorlogo_512.png",
+    sizes: "512x512",
+    type: "image/png",
+    purpose: "maskable",
+  },
 ];
 
 export default defineConfig({
   plugins: [
     react(),
-    {
-      name: "copy-sw",
-      writeBundle() {
-        copyFileSync(
-          resolve(process.cwd(), "./sw.js"),
-          resolve(process.cwd(), "./dist/sw.js")
-        );
+    VitePWA({
+      registerType: "autoUpdate",
+      injectRegister: "inline",
+      workbox: {
+        clientsClaim: true,
+        skipWaiting: true,
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,pdf}"],
+        cleanupOutdatedCaches: true,
       },
-    },
-    {
-      name: "copy-assets",
-      writeBundle() {
-        const manifestPath = resolve(process.cwd(), "./manifest.json");
-
-        // Copia el manifest.json a la carpeta dist
-        copyFileSync(
-          manifestPath,
-          resolve(process.cwd(), "./dist/manifest.json")
-        );
-
-        // Copia todas las imágenes referenciadas en la manifest.json a la carpeta dist
-        images.forEach((image) => {
-          const imagePath = resolve(process.cwd(), `./public/${image}`);
-          copyFileSync(imagePath, resolve(process.cwd(), `./dist/${image}`));
-        });
+      manifest: {
+        short_name: "VicEspejo",
+        name: "Victor Espejo",
+        start_url: ".",
+        background_color: "#0284c7",
+        theme_color: "#0284c7",
+        display: "standalone",
+        scope: "/",
+        icons: images.map((image) => image),
       },
-    },
+    }),
   ],
   resolve: {
     alias: {
