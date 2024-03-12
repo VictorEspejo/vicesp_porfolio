@@ -8,11 +8,13 @@ const images = [
     src: "/victorlogo_144.png",
     sizes: "144x144",
     type: "image/png",
+    purpose: "any",
   },
   {
     src: "/victorlogo_192.png",
     sizes: "192x192",
     type: "image/png",
+    purpose: "any",
   },
   {
     src: "/victorlogo_384.png",
