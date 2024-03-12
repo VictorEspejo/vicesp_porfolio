@@ -13,7 +13,7 @@ export default function Welcome() {
         <header className="w-1/2 px-16 py-20 grid place-items-center lg:place-items-start grid-cols-1 lg:grid-cols-2">
           <img
             src={VictorLogo}
-            alt="Logo Victor Espejo"
+            alt="Logo Victor Espejo Illanes"
             className="w-16 h-16 cursor-pointer col-span-2"
           />
         </header>

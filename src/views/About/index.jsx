@@ -55,7 +55,7 @@ export default function About() {
           <div className="flex flex-col justify-center items-center text-white">
             <header className="flex flex-col md:flex-row gap-3 w-full relative overflow-hidden">
               <h2 className="text-3xl lg:text-4xl font-bold text-center">
-                Victor Espejo
+                Victor Espejo Illanes
               </h2>
               <motion.span
                 variants={variants}
