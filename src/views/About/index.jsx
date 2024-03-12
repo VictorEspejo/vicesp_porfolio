@@ -52,7 +52,7 @@ export default function About() {
               className="w-72 md:w-96 aspect-square object-cover rounded-full bg-white border-4 border-sky-600 dark:border-sky-800 shadow-2xl"
             />
           </div>
-          <div className="flex flex-col justify-center items-center text-white">
+          <div className="flex flex-col justify-center items-center gap-10 text-white">
             <header className="flex flex-col md:flex-row gap-3 w-full relative overflow-hidden">
               <h2 className="text-3xl lg:text-4xl font-bold text-center">
                 Victor Espejo Illanes
@@ -73,7 +73,7 @@ export default function About() {
                 {openToWorkText}
               </motion.span>
             </header>
-            <p className="text-xl mt-4 leading-8 lg:pr-32 text-align-start">
+            <p className="text-xl mt-4 leading-8 text-align-start">
               {descriptionText}
             </p>
           </div>

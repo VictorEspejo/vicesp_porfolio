@@ -6,3 +6,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+h2, h3, span {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+}

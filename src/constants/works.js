@@ -46,3 +46,31 @@ export const works = [
     ],
   },
 ];
+
+export const skills = [
+  {
+    name: "TypeScript / JS",
+    value: 100,
+    years: 3,
+  },
+  {
+    name: "React + Redux + PWA",
+    value: 100,
+    years: 3,
+  },
+  {
+    name: "Vue + Vite",
+    value: 50,
+    years: 1,
+  },
+  {
+    name: "LitElement",
+    value: 80,
+    years: 3,
+  },
+  {
+    name: "NodeJS + Express",
+    value: 60,
+    years: 1,
+  },
+];

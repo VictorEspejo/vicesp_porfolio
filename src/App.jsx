@@ -1,10 +1,11 @@
 import "./App.css";
-import About from "./views/About";
-import Welcome from "./views/Welcome";
-import Experience from "./views/Experience";
-import Contact from "./views/Contact";
+import About from "@views/About";
+import Welcome from "@views/Welcome";
+import Experience from "@views/Experience";
+import Contact from "@views/Contact";
 import Footer from "@components/Footer";
 import configDarkMode from "@utils/darkMode";
+import Skills from "@views/Skills";
 
 function App() {
   configDarkMode();
@@ -19,6 +20,9 @@ function App() {
         </section>
         <section id="experience" className="w-full">
           <Experience />
+        </section>
+        <section id="skills" className="w-full">
+          <Skills />
         </section>
         <section id="contact" className="w-full">
           <Contact />

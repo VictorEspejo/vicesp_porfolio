@@ -10,6 +10,11 @@ export default {
     description: `Soy Víctor Espejo, un desarrollador front-end con más de 5 años de experiencia en el sector bancario. Experto en diversos frameworks, mis pasiones se extienden a la tecnología, el cine y los videojuegos.`,
     openToWork: "Disponible para trabajar",
   },
+  skills: {
+    title: "Habilidades",
+    subtitle: "destacadas",
+    techs: "Tecnologías",
+  },
   works: {
     titleWhere: "Donde he",
     titleWorked: "trabajado",
@@ -19,7 +24,7 @@ export default {
     sngular:
       "Experto en metodologías de web components, pruebas unitarias y e2e, diseño responsive. Experiencia en integración y desarrollo continuo. Conocimientos: React, TypeScript, NodeJS, MongoDB, Vue, PWA.",
     amaris:
-      "Experiencia en LitElement, metodologías de componentes web y amplia trayectoria en el desarrollo de sitios web bancarios. Experto en webpack, integración continua, Git y otras tecnologías esenciales. Especializado en pruebas unitarias y e2e, diseño responsivo.",
+      "Experiencia en LitElement, metodologías de componentes web y amplia trayectoria en el desarrollo de web bancarias. Experto integración continua, Git y otras tecnologías esenciales. Especializado en pruebas unitarias, e2e, diseño responsivo.",
   },
   contact: {
     title: "Contacta",
