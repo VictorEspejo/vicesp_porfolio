@@ -60,6 +60,7 @@ export default defineConfig({
       "@assets": "/src/assets",
       "@utils": "/src/utils",
       "@constants": "/src/constants",
+      "@views": "/src/views",
     },
   },
 });

@@ -12,6 +12,11 @@ export default {
       passions extend to technology, cinema, and video games.`,
     openToWork: "Open to work",
   },
+  skills: {
+    title: "Main",
+    subtitle: "skills",
+    techs: "Technologies",
+  },
   works: {
     titleWhere: "Where I've",
     titleWorked: "worked",
