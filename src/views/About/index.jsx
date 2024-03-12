@@ -3,7 +3,6 @@ import WaveBottomImg from "../../assets/images/wavebottom.svg";
 import VictorImage from "../../assets/images/victor.png";
 import { motion } from "framer-motion";
 import { t } from "i18next";
-import { Helmet } from "react-helmet";
 
 export default function About() {
   const variants = {
@@ -14,7 +13,6 @@ export default function About() {
   const aboutTitle = t("about.title") || "";
   const openToWorkText = t("about.openToWork");
   const descriptionText = t("about.description");
-  const metaText = t("about.meta");
 
   return (
     <section className="w-full bg-gray-100 dark:bg-slate-800">
@@ -26,14 +24,6 @@ export default function About() {
         aria-hidden="true"
       />
       <article className="w-full bg-sky-600 text-white px-10 lg:px-8">
-        <Helmet>
-          <title>About - Victor Espejo</title>
-          <meta name="description" content={metaText} />
-          <meta
-            name="keywords"
-            content="React, JavaScript, Web Development, Front-end Development, Victor Espejo"
-          />
-        </Helmet>
         <h1
           className="w-full text-6xl font-bold text-center py-16"
           aria-level="1"
