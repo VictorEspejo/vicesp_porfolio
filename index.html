@@ -7,10 +7,11 @@
   <meta name="description" content="Víctor Espejo - Desarrollador Front-end. Experiencia en React, TypeScript, NodeJS, MongoDB, Vue, PWA. Especializado en web components, pruebas unitarias, e2e y diseño responsive.">
   <meta name="keywords" content="Desarrollador Front-end, React, TypeScript, NodeJS, MongoDB, Vue, PWA, web components, pruebas unitarias, e2e, diseño responsive">
   <meta name="author" content="Víctor Espejo">
-    <meta name="theme-color" content="#0284c7">
+  <meta name="theme-color" content="#0284c7">
   <link rel="icon" type="image/png" href="/victorlogo.png">
+  <link rel="apple-touch-icon" href="/victorlogo.png" sizes="180x180">
+  <link rel="mask-icon" href="/victorlogo.png" color="#FFFFFF">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="manifest" href="/manifest.json">
   <title>Víctor Espejo - Desarrollador Front-end</title>
 
   <!-- Open Graph / Facebook -->
@@ -29,13 +30,6 @@
 </head>
 <body>
   <div id="root"></div>
-  <script>
-    window.addEventListener("DOMContentLoaded", () => { 
-      if(navigator.serviceWorker){
-        navigator.serviceWorker.register("./sw.js");
-      }
-    })
-  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
