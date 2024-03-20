@@ -92,8 +92,8 @@ export default function WorkCard({
                     loading="lazy"
                   />
                   <span
-                    className="group-hover:opacity-80 transition-opacity bg-sky-600 px-2 text-sm text-gray-100 rounded-md absolute left-1/2 top-1/2
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto uppercase font-bold w-max"
+                    className="group-hover:opacity-80 transition-opacity bg-sky-600 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 top-1/2
+    -translate-x-1/2 translate-y-full opacity-0 m-3 mx-auto uppercase font-bold w-max"
                   >
                     {tech}
                   </span>
