@@ -13,7 +13,7 @@ export default {
   skills: {
     title: "Habilidades",
     subtitle: "destacadas",
-    techs: "Tecnologías",
+    techs: "Experiencia",
   },
   works: {
     titleWhere: "Donde he",

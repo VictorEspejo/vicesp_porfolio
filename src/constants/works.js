@@ -70,7 +70,12 @@ export const skills = [
   },
   {
     name: "NodeJS + Express",
-    value: 60,
+    value: 40,
+    years: 1,
+  },
+  {
+    name: "Docker + Github Actions",
+    value: 40,
     years: 1,
   },
 ];
